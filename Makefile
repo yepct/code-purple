@@ -1,7 +1,7 @@
 AS = i686-elf-as
 CC = i686-elf-gcc
 
-CFLAGS = -std=gnu99 -ffreestanding -O2 -Wall -Wextra
+CFLAGS = -std=gnu99 -ffreestanding -O2 -Wall -Wextra -I include -I src
 LDFLAGS = -T linker.ld -ffreestanding -O2 -nostdlib -lgcc
 
 OBJS = build/boot.o build/kernel.o
